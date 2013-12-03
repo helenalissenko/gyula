@@ -1,0 +1,9 @@
+<br><br><br>
+
+<%= form_tag("/gyulas/speak", method: "post", remote: true) do %>
+  <%= text_field_tag(:q) %><br>
+  <%= select_tag(:language, options_for_select([['English', 'en'], ['Hungarian', 'hu']])) %>
+  <br><br>
+  <%= submit_tag("Talk!") %>
+  
+<% end %>
